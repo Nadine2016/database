@@ -6,7 +6,7 @@ resource "ibm_database" "database" {
   name              = "tfdb"
   plan              = "standard"
   location          = "us-south"
-  resource_group_id = "${data.ibm_resource_group.resource_group.id}"
+  resource_group_id = "${data.ibm_resource_group.group.id}"
 
   service = "databases-for-postgresql"
   version = 11
