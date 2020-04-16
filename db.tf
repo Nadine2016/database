@@ -12,7 +12,7 @@ resource "ibm_database" "database" {
   version = 11
 
   service_endpoints            = "private"
-  adminpassword                = "password"
+  adminpassword                = "adminpassword"
   members_memory_allocation_mb = 3072
   members_disk_allocation_mb   = 61440
 
